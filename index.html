@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Board de tarefas</h1>
+
+        <!-- NOVA SEÇÃO UNIFICADA -->
+        <section id="create-task-section">
+            <form id="create-task-form">
+                <input 
+                    type="text" 
+                    id="description" 
+                    name="description" 
+                    class="input-description"
+                    aria-label="Nome da tarefa"
+                    placeholder="Nome da tarefa"
+                />
+                <input 
+                    type="text" 
+                    id="tag-description" 
+                    name="tag-description" 
+                    class="input-description"
+                    aria-label="Etiqueta"
+                    placeholder="Etiqueta"
+                />
+                <button type="submit" id="save-task" aria-label="Cadastrar tarefa" class="add-task-btn">+</button>
+            </form>
+        </section>
+
+        <section class="todo-list-section">
+            <ul id="todo-list"></ul>
+        </section>
+
+        <footer id="todo-footer">
+            <!-- Botão removido -->
+        </footer>
+        
+    </main>
+</body>
+</html>
